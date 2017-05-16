@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+</head>
+
+
+<script >
+
+    var newArray = _.compact([0, 1, false, 2, '', 3]);
+    console.log(newArray)
+
+</script>
+
+<body>
+
+    <h3>Creates an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.</h3>
+    <p>
+        _.compact([0, 1, false, 2, '', 3]);
+        // => [1, 2, 3]
+    </p>
+
+</body>
+</html>

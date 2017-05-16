@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+</head>
+
+
+<script >
+
+
+    var newArray = _.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor);
+    console.log(newArray);
+
+</script>
+
+<body>
+
+    <h3>Creates an array of array values not included in the other given arrays using .</h3>
+    <h3>The order and references of result values are determined by the first array</h3>
+    <p>
+        _.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor);
+        // => [1.2]
+    </p>
+
+</body>
+</html>

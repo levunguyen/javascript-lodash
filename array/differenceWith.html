@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+</head>
+
+
+<script >
+
+
+    var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+    var newArray = _.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);
+    console.log(newArray);
+
+</script>
+
+<body>
+
+    <h3>This method is like _.difference except that it accepts comparator which is invoked to compare elements of array to values.</h3>
+    <h3> The order and references of result values are determined by the first array. The comparator is invoked with two arguments: (arrVal, othVal)</h3>
+    <p>
+        var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+
+        _.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);]
+    </p>
+
+</body>
+</html>
